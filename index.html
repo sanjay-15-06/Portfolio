@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Sanju Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="container">
+  <div class="header-flex">
+    <img src="photo.jpg" alt="Sanju" class="profile-photo" />
+    <div>
       <h1>Sanju</h1>
       <p>Web Developer | UI Designer | Freelancer</p>
+      <a href="cv.pdf" download class="download-btn">Download CV</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="about">
+  <nav>
+    <ul class="navbar">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
       <p>I am a passionate web developer with experience in creating modern websites and applications using HTML, CSS, JavaScript, and frameworks. I enjoy solving problems and building responsive user interfaces.</p>
     </div>
   </section>
-
-  <section class="projects">
+  <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-card">
@@ -34,8 +44,7 @@
       </div>
     </div>
   </section>
-
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
       <form>
